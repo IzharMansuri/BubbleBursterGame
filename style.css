@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(bg-desktop.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    /* background-color: #9AB89C; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main{
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.ptop{
+    display:flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-evenly;
+    padding: 20px 100px 20px 100px;
+}
+.elem{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.box{
+    color: #476848;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.pbtm{
+    background: transparent;
+    opacity: 0.5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 80px);
+    
+}
+#reset{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+#resetContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+}
+.bubble{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    display: flex;
+    font-weight: 900;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.bubble:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.instruct{
+    /* color: #264427; */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.instruct>p{
+    font-weight: 800;
+}
+#hitval{
+    color: red;
+}
+.copyright{
+    color: grey;
+    align-self: baseline;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .ptop{
+ padding: 20px 10px 20px 10px;
+ justify-content: space-around;
+   }
+   .elem{
+    justify-content: center;
+   }
+   .elem>h2{
+    margin-right: 10px;
+   }
+   body{
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(bg-phone.jpg);
+   }
+   .instruct{
+    padding: 10px 20px;
+    text-align: center;
+   }
+   .pbtm{
+    padding: 5px;
+   }
+   .copyright{
+    margin-left: 40px;
+   }
+  }
