@@ -22,7 +22,7 @@ var clutter=" ";
  function getBubbleCount() {
    var screenWidth = window.innerWidth;
    if (screenWidth > 1200) {
-       return 132; // Display 132 bubbles for larger screens
+       return 147; // Display 132 bubbles for larger screens
    } else if (screenWidth > 500) {
        return 96; // Display 100 bubbles for medium screens
    } else {
